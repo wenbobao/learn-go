@@ -144,3 +144,9 @@ goku.Power = 9000
 ```
 goku := Saiyan{"Goku", 9000}
 ```
+
+## go 数据类型
+
+基本类型，如：int、float、bool、string；
+结构化的（复合的），如：struct、array、slice、map、channel；
+描述类型的行为的，如：interface。·
