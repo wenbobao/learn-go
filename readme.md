@@ -36,7 +36,9 @@ go build main.go // 编译
 
 ### 入口函数
 
-`go`程序入口必须是 `main` 函数，并且在 `main` 包中写代码.
+每个 `Go` 程序都是由包组成的。
+
+`go`程序入口必须是 `main` 包 , `main` 函数.
 
 ```
 package main
@@ -53,6 +55,11 @@ func main() {
 ```
 package main
 
+// 不建议使用
+import "fmt"
+import "math"
+// 推荐使用
+// 打包的导入语句是更好的形式
 import (
   "fmt"
   "os"
@@ -82,7 +89,7 @@ func add(a int, b int) int {
 // 返回多个参数
 func power(name string) (int, bool) {
 }
-//如果参数具有相同的类型
+//如果参数具有相同的类型, 则除了最后一个类型之外，其他都可以省略。
 func add(a, b int) int {
 
 }
